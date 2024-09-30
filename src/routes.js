@@ -8,6 +8,7 @@ const {
 } = require('./handler');
 
 const router = express.Router();
+
 router.post('/books', addBookHandler);
 router.get('/books', getAllBooksHandler);
 router.get('/books/:bookId', getBookByIdHandler);
